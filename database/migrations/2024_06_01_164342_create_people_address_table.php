@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('people_address', function (Blueprint $table) {
             $table->id();
-            $table->foreign('person_id');
-            $table->foreign('address_id');
+            $table->foreignId('person_id');
+            $table->foreignId('address_id');
             $table->boolean('_is_active')->default(true);
             $table->timestamps();
         });
