@@ -24,7 +24,7 @@ class UpdateAddressRequest extends Request
     public function rules(): array
     {
         return [
-            'type' => ['required', 'string'],
+            'type' => ['required', 'string', 'in:residencial,comercial'],
             'cep' => ['required', 'string'],
             'street' => ['required', 'string'],
             'uf' => ['required', 'string', 'max:2'],

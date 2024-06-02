@@ -24,12 +24,12 @@ class CreateRequest extends Request
     public function rules(): array
     {
         return [
-            'cpf' => ['required', 'string'],
+            'cpf' => ['required', 'string', 'min:11', 'max:11'],
             'name' => ['required', 'string'],
             'social_name' => ['required', 'string'],
             'mother_name' => ['required', 'string'],
             'father_name' => ['required', 'string'],
-            'phone' => ['required', 'phone'],
+            'phone' => ['required', 'min:11', 'max:11'],
             'email' => ['required', 'email'],
         ];
     }

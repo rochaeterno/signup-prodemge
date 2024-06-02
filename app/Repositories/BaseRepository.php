@@ -36,7 +36,7 @@ abstract class BaseRepository
     public function setPaginate(): Paginator
     {
         return $this->query->simplePaginate(
-            (int)$this->request->input('per_page', 20),
+            (int)$this->request->input('per_page', -1),
             ['*'],
             'page',
             (int)$this->request->input('current_page', 1)
