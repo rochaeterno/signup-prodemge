@@ -17,6 +17,9 @@ return new class extends Migration
             $table->foreignId('address_id');
             $table->boolean('_is_active')->default(true);
             $table->timestamps();
+
+            $table->foreign('person_id')->references('id')->on('people');
+            $table->foreign('address_id')->references('id')->on('addresses');
         });
     }
 
