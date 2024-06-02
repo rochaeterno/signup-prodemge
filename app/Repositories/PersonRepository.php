@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use app\Contracts\Services\PersonRepositoryInterface;
+use App\Contracts\Repositories\PersonRepositoryInterface;
 use App\Http\Requests\Request;
 use App\Models\Address;
 use App\Models\Person;

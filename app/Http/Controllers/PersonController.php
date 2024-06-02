@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use app\Contracts\Services\PersonServiceInterface;
+use App\Contracts\Services\PersonServiceInterface;
 use App\Http\Requests\People\CreateRequest;
 use App\Http\Requests\People\ListRequest;
 use App\Http\Requests\People\UpdateAddressRequest;

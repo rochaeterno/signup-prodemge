@@ -1,6 +1,6 @@
 <?php
 
-namespace app\Contracts\Services;
+namespace App\Contracts\Services;
 
 use App\Http\Requests\Request;
 use App\Models\Person;

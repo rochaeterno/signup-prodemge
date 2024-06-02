@@ -2,9 +2,9 @@
 
 namespace App\Services;
 
-use app\Contracts\Services\AddressRepositoryInterface;
-use app\Contracts\Services\PersonRepositoryInterface;
-use app\Contracts\Services\PersonServiceInterface;
+use App\Contracts\Repositories\AddressRepositoryInterface;
+use App\Contracts\Repositories\PersonRepositoryInterface;
+use App\Contracts\Services\PersonServiceInterface;
 use App\Http\Requests\Request;
 use App\Models\Address;
 use App\Models\Person;
@@ -16,7 +16,8 @@ class PersonService implements PersonServiceInterface
     public function __construct(
         protected PersonRepositoryInterface $repository,
         protected AddressRepositoryInterface $addressRepository
-    ) {}
+    ) {
+    }
 
     public function create(Request $request): Model
     {

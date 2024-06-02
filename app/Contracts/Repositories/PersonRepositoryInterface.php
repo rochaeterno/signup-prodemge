@@ -1,6 +1,6 @@
 <?php
 
-namespace app\Contracts\Services;
+namespace App\Contracts\Repositories;
 
 use App\Http\Requests\Request;
 use App\Models\Address;

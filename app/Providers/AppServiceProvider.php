@@ -2,10 +2,10 @@
 
 namespace App\Providers;
 
-use app\Contracts\Services\AddressRepositoryInterface;
-use app\Contracts\Services\AddressServiceInterface;
-use app\Contracts\Services\PersonRepositoryInterface;
-use app\Contracts\Services\PersonServiceInterface;
+use App\Contracts\Repositories\AddressRepositoryInterface;
+use App\Contracts\Services\AddressServiceInterface;
+use App\Contracts\Repositories\PersonRepositoryInterface;
+use App\Contracts\Services\PersonServiceInterface;
 use App\Repositories\AddressRepository;
 use App\Repositories\PersonRepository;
 use App\Services\AddressService;

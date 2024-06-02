@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use app\Contracts\Services\AddressRepositoryInterface;
+use App\Contracts\Repositories\AddressRepositoryInterface;
 use App\Models\Address;
 
 class AddressRepository extends BaseRepository implements AddressRepositoryInterface

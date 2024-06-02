@@ -17,7 +17,10 @@ class PersonMinimalResource extends JsonResource
     {
         /** @var Person $this */
         return [
-
+            'name' => $this->name,
+            'social_name' => $this->social_name,
+            'email' => $this->email,
+            'cpf' => $this->cpf,
         ];
     }
 }

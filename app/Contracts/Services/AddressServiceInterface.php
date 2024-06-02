@@ -1,6 +1,6 @@
 <?php
 
-namespace app\Contracts\Services;
+namespace App\Contracts\Services;
 
 interface AddressServiceInterface
 {

@@ -2,8 +2,8 @@
 
 namespace App\Services;
 
-use app\Contracts\Services\AddressRepositoryInterface;
-use app\Contracts\Services\AddressServiceInterface;
+use App\Contracts\Repositories\AddressRepositoryInterface;
+use App\Contracts\Services\AddressServiceInterface;
 use App\Http\Requests\Request;
 use Illuminate\Database\Eloquent\Model;
 
